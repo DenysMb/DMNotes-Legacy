@@ -1,0 +1,63 @@
+{
+  "name": "dmnotes",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@reduxjs/toolkit": "^1.6.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/draft-js": "^0.11.5",
+    "@types/draftjs-to-html": "^0.8.1",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-draft-wysiwyg": "^1.13.3",
+    "@types/react-router-dom": "^5.3.0",
+    "add": "^2.0.6",
+    "assign-symbols": "^2.0.2",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
+    "sass": "^1.42.1",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.13"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

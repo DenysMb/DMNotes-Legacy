@@ -1,0 +1,317 @@
+.HomeContainer {
+  display: flex;
+  height: 900px;
+  height: 100%;
+}
+
+.SideBar {
+  padding: 24px 16px;
+  background-color: #fbfbfb;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+
+  &User {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    &Name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  &Search {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    margin-bottom: 24px;
+
+    &Icon {
+      color: #a3a3a3;
+      margin-right: 8px;
+    }
+
+    &Input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+  }
+
+  &ListButtons {
+    flex: 1;
+
+    & > * {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    &Button {
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      color: #979797;
+      cursor: pointer;
+
+      &Active {
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: 600;
+      }
+
+      &Icon {
+        margin-right: 16px;
+      }
+
+      &Text {
+        flex: 1;
+      }
+    }
+  }
+
+  &Exit {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+
+    &Icon {
+      margin-right: 16px;
+    }
+
+    &Text {
+      font-size: 16px;
+    }
+  }
+}
+
+.NoteList {
+  padding: 24px 16px;
+  background-color: #ffffff;
+  width: 250px;
+  border-right: 1px solid #e7e7e7;
+  display: flex;
+  flex-direction: column;
+
+  &Title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  &AddButton {
+    background-color: #f6f6f6;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+
+    &Icon {
+      margin-right: 16px;
+    }
+  }
+
+  &Notes {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: auto;
+    margin-top: 24px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.EditorContainer {
+  padding: 24px;
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  &Null {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #bebebe;
+  }
+
+  &Header {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+
+    &Breadcrumb {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      & > p {
+        margin: 0;
+        padding: 0;
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0px;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    &Icon {
+      cursor: pointer;
+    }
+  }
+
+  &Info {
+    border-bottom: 1px solid #f2f2f2;
+    padding-top: 24px;
+    padding-bottom: 32px;
+
+    &Title {
+      font-size: 36px;
+      font-weight: 600;
+      border: none;
+      outline: none;
+    }
+
+    &Line {
+      display: flex;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      &Label {
+        color: #808080;
+        width: 124px;
+      }
+
+      &Value {
+        display: flex;
+      }
+    }
+  }
+
+  &Editor {
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    // border: 1px solid #0f0;
+
+    &Wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      // border: 1px solid #f00;
+    }
+
+    &Toolbar {
+      border: none !important;
+      border-bottom: 1px solid #f2f2f2 !important;
+      padding: 16px 0px !important;
+    }
+
+    &Editor {
+      height: auto !important;
+      flex: 1;
+      // border: 1px solid #00f;
+    }
+  }
+}
+
+.Note {
+  background-color: #fbfbfb;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 24px;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+
+  &Active {
+    background-color: #f6f6f6;
+  }
+
+  &Date {
+    color: #bebebe;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 4px;
+
+    &Active {
+      color: #878787;
+    }
+  }
+
+  &Title {
+    color: #808080;
+    font-weight: 600;
+    margin-bottom: 4px;
+
+    &Active {
+      color: #000;
+    }
+  }
+
+  &Text {
+    color: #a5a5a5;
+    font-size: 14px;
+    line-height: 1.4rem;
+
+    &Active {
+      color: #4a4a4a;
+    }
+  }
+
+  &Tags {
+    display: flex;
+    margin-top: 8px;
+  }
+}
+
+.Tag {
+  background-color: #f7f7f7;
+  color: #b9b9b9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 8px;
+  font-weight: 600;
+  display: flex;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &Active {
+    color: #5f5f5f;
+    background-color: #eee;
+  }
+
+  &Icon {
+    margin-right: 8px;
+  }
+}
